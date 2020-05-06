@@ -14,6 +14,11 @@ class Ncurl < Formula
     sha256 "647344a061c249a3b74e230c739f434d7ea4d8b1d5f3721bc0f3558049b38f44"
   end
 
+  resource "uncurl" do
+    url "https://files.pythonhosted.org/packages/34/bd/d2ea420b17029179a31ab06d2373e0399e6b43c40f8178c781035117da28/uncurl-0.0.10.tar.gz"
+    sha256 "636ee68d7d837cadb2d6c50f1d47de4053c8701b969cbea87654d89edb3e79a6"
+  end
+
   resource "requests" do
     url "https://files.pythonhosted.org/packages/f5/4f/280162d4bd4d8aad241a21aecff7a6e46891b905a4341e7ab549ebaf7915/requests-2.23.0.tar.gz"
     sha256 "b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"
