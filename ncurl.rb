@@ -7,13 +7,6 @@ class Ncurl < Formula
   sha256 "f4eef5a5d6d313beaaed22678d56f14b98006586f690ab28fced2b90ca81e29c"
   head "https://github.com/ncurl/ncurl.git"
 
-  bottle do
-    cellar :any_skip_relocation
-    sha256 "25f0e58f81a2cdd9cba772f07d67591533b4b31a2b970a356701aa046d4d9638" => :catalina
-    sha256 "be158ebb4cfd327ebea02f7b8b8d63d093e474cd303eafff4a2b56b0611983a2" => :mojave
-    sha256 "f331edb94183bfc5fa9de4b4abf148cc91a3a8b3c0e24cc1f5e6b0a4172dd34d" => :high_sierra
-  end
-
   depends_on "python@3.8"
 
   resource "Pygments" do
