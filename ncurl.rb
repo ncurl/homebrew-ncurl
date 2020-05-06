@@ -54,6 +54,11 @@ class Ncurl < Formula
     sha256 "236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"
   end
 
+  resource "xerox" do
+    url "https://files.pythonhosted.org/packages/a8/f2/48a3fb98b128e77e0c1e15a80c71d397c1ac1a4ed6db00e3e7307f767f93/xerox-0.4.1.tar.gz"
+    sha256 "1b598ed4ba017374f02e9cef983febdd19dba79a5301856fdba985c490b14325"
+  end
+
   def install
   	virtualenv_install_with_resources
   end
