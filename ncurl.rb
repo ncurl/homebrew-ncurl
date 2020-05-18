@@ -1,22 +1,17 @@
 class Ncurl < Formula
   include Language::Python::Virtualenv
 
-  desc "Next generation of curl"
-  homepage "ncurl.sh"
-  url "https://files.pythonhosted.org/packages/5e/46/cb768a20424f02d36004615d7d4ae87eba64c3968302d8bde11be645b675/ncurl-0.3.0.tar.gz"
-  sha256 "f4eef5a5d6d313beaaed22678d56f14b98006586f690ab28fced2b90ca81e29c"
+  desc "Next generation of cURL"
+  homepage "https://ncurl.sh"
+  url "https://files.pythonhosted.org/packages/47/dd/26e32fdac10197c37a1206a8a01f0bf65695157e23e7d1f65bf8abebf65d/ncurl-0.6.4.tar.gz"
+  sha256 "0807e0ae18211f7d53d5a6efb820098497a6142c337ae1f9331a218c6638212c"
   head "https://github.com/ncurl/ncurl.git"
 
-  depends_on "python@3.8"
+  depends_on "python@3"
 
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/6e/4d/4d2fe93a35dfba417311a4ff627489a947b01dc0cc377a3673c00cf7e4b2/Pygments-2.6.1.tar.gz"
     sha256 "647344a061c249a3b74e230c739f434d7ea4d8b1d5f3721bc0f3558049b38f44"
-  end
-
-  resource "uncurl" do
-    url "https://files.pythonhosted.org/packages/34/bd/d2ea420b17029179a31ab06d2373e0399e6b43c40f8178c781035117da28/uncurl-0.0.10.tar.gz"
-    sha256 "636ee68d7d837cadb2d6c50f1d47de4053c8701b969cbea87654d89edb3e79a6"
   end
 
   resource "requests" do
@@ -47,18 +42,6 @@ class Ncurl < Formula
   resource "chardet" do
     url "https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/chardet-3.0.4.tar.gz"
     sha256 "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
-  end
-
-  # uncurl requirement
-  resource "six" do
-    url "https://files.pythonhosted.org/packages/21/9f/b251f7f8a76dec1d6651be194dfba8fb8d7781d10ab3987190de8391d08e/six-1.14.0.tar.gz"
-    sha256 "236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"
-  end
-
-  # uncurl requirement
-  resource "xerox" do
-    url "https://files.pythonhosted.org/packages/a8/f2/48a3fb98b128e77e0c1e15a80c71d397c1ac1a4ed6db00e3e7307f767f93/xerox-0.4.1.tar.gz"
-    sha256 "1b598ed4ba017374f02e9cef983febdd19dba79a5301856fdba985c490b14325"
   end
 
   def install
