@@ -3,8 +3,8 @@ class Ncurl < Formula
 
   desc "Next generation of cURL"
   homepage "https://ncurl.sh"
-  url "https://files.pythonhosted.org/packages/a8/b1/a9fb10b8d5dea4b39f8829a76d10645df2a5050f69dcc71f9bd61e1d0128/ncurl-0.7.0.tar.gz"
-  sha256 "4356740da6d342ed4f0a5276b02414108b1c16ff5daf5ee8bef6447e87035d6a"
+  url "https://files.pythonhosted.org/packages/a5/b1/69e8e33ab10bfce44d8df81bc2fa38c5424ba6c236c9bf7b5e3bccb3079c/ncurl-0.7.5.tar.gz"
+  sha256 "3eeb00faeece979070f88cf440cfb50b33a2ebc0337369cf344f94c1b425667a"
   head "https://github.com/ncurl/ncurl.git"
 
   depends_on "python@3"
@@ -12,6 +12,11 @@ class Ncurl < Formula
   resource "Pygments" do
     url "https://files.pythonhosted.org/packages/6e/4d/4d2fe93a35dfba417311a4ff627489a947b01dc0cc377a3673c00cf7e4b2/Pygments-2.6.1.tar.gz"
     sha256 "647344a061c249a3b74e230c739f434d7ea4d8b1d5f3721bc0f3558049b38f44"
+  end
+  
+  resource "colorama" do
+    url "https://files.pythonhosted.org/packages/82/75/f2a4c0c94c85e2693c229142eb448840fba0f9230111faa889d1f541d12d/colorama-0.4.3.tar.gz"
+    sha256 "e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
   end
 
   resource "requests" do
