@@ -3,8 +3,8 @@ class Ncurl < Formula
 
   desc "Next generation of cURL"
   homepage "https://ncurl.sh"
-  url "https://files.pythonhosted.org/packages/a5/b1/69e8e33ab10bfce44d8df81bc2fa38c5424ba6c236c9bf7b5e3bccb3079c/ncurl-0.7.5.tar.gz"
-  sha256 "3eeb00faeece979070f88cf440cfb50b33a2ebc0337369cf344f94c1b425667a"
+  url "https://files.pythonhosted.org/packages/ba/41/3da98f050d31a83906e064b83834e985e714595c3c9778a2dba5e65a8965/ncurl-0.7.6.tar.gz"
+  sha256 "4c7d1718c07989953e1527ced7c50519591a12e01a9b61ad6c5b3a96fe320e2d"
   head "https://github.com/ncurl/ncurl.git"
 
   depends_on "python@3"
